@@ -27,5 +27,23 @@ vehicle.weight + spoiler.angle + ground.clearance + AWD, data = mechacarTable)))
 
 # Graph slopes
 # https://stackoverflow.com/questions/17615791/plot-regression-line-from-multiple-regression-in-r
-par(mfrow=c1,5))
+par(mfrow=c1,5)
 termplot(mpg_regression)
+
+# Read in suspension coil data
+read.csv("Suspention_Coil.csv")
+
+# Create summary statistics table for suspension coil data and determine if
+# variance exceeds 100 psi.
+# Code: https://www.youtube.com/watch?v=xngavnPBDO4
+coilSummary <- suspensionCoiltable %>% group_by(Manufacturing_Lot) %>%
+summarise(count = length(VehicleID), Avg.PSI = mean(PSI), Med.PSI = median(PSI),
+Variance = var(PSI), StDev.PSI = stdev(PSI))
+
+# Determine if sample is different from population mean of 1500 psi
+# Safety: Set CI to 0/.99
+t.test(suspensionCoiltable$PSI, mu=1500, conf.level = 0.99)
+
+
+
+

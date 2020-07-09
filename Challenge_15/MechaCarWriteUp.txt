@@ -30,7 +30,29 @@ Multiple R-squared:  0.7149,	Adjusted R-squared:  0.6825
 F-statistic: 22.07 on 5 and 44 DF,  p-value: 5.35e-11
 
 The variables vehicle length and ground clearance provide a non-random
-amount of variance to fuel efficiency. AWD has a negative slope while the rest
-of the coefficients are positive. Vehicle weight and spoilter angle have smaller
-slopes compared to vehcile length and ground clearance.
-y = 
+amount of variance to fuel efficiency. AWD has a small negative slope 
+while the rest of the coefficients are positive. Vehicle weight and spoilter
+angle have smaller slopes compared to vehcile length and ground clearance. The
+model's adusted r-squared is 0.6825, thus the model is okay at predicting
+fuel efficiency and it could be improved.
+
+Looking at the coil summary tables, one can see coil lots 1 and 2 are within
+the design specifications, variance does not exceed 100 lbs./sq. in. However,
+lot 3's variance does not meet this standard.MechCar personnel should track
+which machines were used to manufacture the lot 3 coils and retool where
+necessary.
+                                       
+One Sample t-test
+
+data:  suspensionCoiltable$PSI
+t = -1.8931, df = 149, p-value = 0.06028
+alternative hypothesis: true mean is not equal to 1500
+99 percent confidence interval:
+1497.099 1500.461
+sample estimates:
+mean of x 
+1498.78
+
+The one sample t-test shows the coil sample deviates from the 1500 psi requirement, off by 1.32 psi. This deviation is due to the coils in lot 3. See coil summary lots table.
+
+Further Study:
