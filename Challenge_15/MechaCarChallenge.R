@@ -41,8 +41,8 @@ summarise(count = length(VehicleID), Avg.PSI = mean(PSI), Med.PSI = median(PSI),
 Variance = var(PSI), StDev.PSI = stdev(PSI))
 
 # Determine if sample is different from population mean of 1500 psi
-# Safety: Set CI to 0/.99
-t.test(suspensionCoiltable$PSI, mu=1500, conf.level = 0.99)
+# Safety: Set CI to 0/.9999
+t.test(suspensionCoiltable$PSI, mu=1500, conf.level = 0.9999)
 
 
 

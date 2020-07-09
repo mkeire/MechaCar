@@ -56,3 +56,11 @@ mean of x
 The one sample t-test shows the coil sample deviates from the 1500 psi requirement, off by 1.32 psi. This deviation is due to the coils in lot 3. See coil summary lots table.
 
 Further Study:
+
+AutosRUs should focus on fuel efficiency, engine/motor reliability, and safety. Fulfilling these basics will ensure favorable ratings and customer satisfaction.
+
+Fuel efficiency testing should be conducted in cities and on freeways where enough locations are randomly sampled. Driving equal distances in these locations, the fuel efficiency can be calculated and compared between the randomly sampled vehicles from each competitor.
+
+An approximation of reliability of MechaCar's engine can be compared to the competition in the shop. All the engines and motors can be set to operate for the same amount of time. Number of failures and wear can be recorded at intervals. A two-sample test can determine if MechaCar is superior.
+
+Crash tests can be conducted where structural deformation is recored. The destruction of various parts of the vehicle can be recorded as yes/no, e.g.front passenger area destroyed. Various angles of impact at different speeds should be used as well as random samples of each vehicle. A chi-square test should be used in this situation because damage and vehicle are qualitative.
